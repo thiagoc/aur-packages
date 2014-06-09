@@ -1,4 +1,6 @@
 # Maintainer: Thiago Coutinho <root@thiagoc.net>
+# https://github.com/thiagoc/aur-packages
+
 pkgname=rss2email-wking
 pkgver=3.8
 pkgrel=1

@@ -1,4 +1,6 @@
 # Maintainer: Thiago Coutinho <root@thiagoc.net>
+# https://github.com/thiagoc/aur-packages
+
 pkgname=rss2email-git
 pkgver=20130514
 pkgrel=2

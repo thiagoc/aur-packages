@@ -1,7 +1,8 @@
-# Maintainer: Thiago Coutinho <root ＠ thiagoc · net>
+# Maintainer: Thiago Coutinho <root@thiagoc.net>
 # Contributor: Marti Raudsepp <marti@juffo.org>
 # Contributor: Sonny Piers <sonny <AT> fastmail <DOT> net>
 # Submitter: sputnick <gilles.quenot <AT> gmail <DOT> com>
+# https://github.com/thiagoc/aur-packages
 
 pkgname=pjsua
 pkgver=2.2.1
@@ -12,6 +13,7 @@ url="http://www.pjsip.org/pjsua.htm"
 depends=(ffmpeg)
 license=('GPL')
 source=(http://www.pjsip.org/release/$pkgver/pjproject-$pkgver.tar.bz2)
+md5sums=('6ed4bb7750c827dc1d881e209a3b62db')
  
 build() {
   cd $srcdir/pjproject-$pkgver
@@ -22,9 +24,11 @@ build() {
   sed -i "s/enum CodecID/enum AVCodecID/g" pjmedia/src/pjmedia/ffmpeg_util.h
   make
 }
+
 package() {
   cd $srcdir/pjproject-$pkgver
   make DESTDIR=$pkgdir install
   install -D -m755 pjsip-apps/bin/pjsua-*gnu $pkgdir/usr/bin/pjsua
 }
-md5sums=('6ed4bb7750c827dc1d881e209a3b62db')
+
+# vim:set ts=2 sw=2 et:
