@@ -3,7 +3,7 @@
 
 pkgname=atraci-bin
 pkgver=0.5.1
-pkgrel=1
+pkgrel=2
 pkgdesc='An application that lets you listen instantly to more than 60 million songs'
 arch=('i686' 'x86_64')
 url='http://getatraci.net'
@@ -12,7 +12,7 @@ optdepends=('libudev.so.0: install it if Atraci does not run correctly')
 conflicts=('atraci-git')
 options=('!strip')
 _pkgarch='32'
-_md5sum='3f3ccb0258d6c2820c4b804275c0276'
+_md5sum='a3f3ccb0258d6c2820c4b804275c0276'
 if [ "${CARCH}" == 'x86_64' ]; then
   _pkgarch='64'
   _md5sum='d00efcf4db1fceebfcf0a84a8dd5a4a4'
