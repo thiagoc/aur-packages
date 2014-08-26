@@ -3,12 +3,12 @@
 
 pkgname=isoplex-bin
 pkgver=0.0.5
-pkgrel=2
+pkgrel=3
 pkgdesc='Watch movies online for free'
 arch=('i686' 'x86_64')
 url='http://isoplex.isohunt.to'
 license=('custom')
-optdepends=('libudev.so.0: install it if HipHop does not run correctly')
+optdepends=('libudev.so.0: install it if Isoplex does not run correctly')
 conflicts=('isoplex')
 options=('!strip')
 _pkgarch='32'
